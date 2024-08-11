@@ -19,7 +19,7 @@ const ContactList: React.FC = () => {
   };
 
   const handleEdit = (id: number) => {
-    const newName = prompt('Enter new name');
+    const newName = prompt('Adicione novamente: Nome Email e Telefone');
     if (newName) {
       dispatch(editContact({ id, name: newName, email: '', phone: '' }));
     }
